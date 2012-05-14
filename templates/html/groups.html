@@ -1,0 +1,27 @@
+@!(data)
+<h4>Groups</h4>
+<ul>
+  @for(i=0; i<data.organizationsMemberships.values.length; i++) {
+    @{grp = data.organizationsMemberships.values[i]}
+    <li itemscope itemtype="http://schema.org/Organization">
+      <em>@grp.startDate.year</em>
+      <div itemprop="name">@grp.name</div>
+      <h5>@grp.description</h5>
+      <div class="brev-faded">
+        @if(grp.occupation) {
+          @if(grp.occupation.position) {
+            @grp.occupation.position.company.name  
+          }
+          else {
+            @if(grp.occupation.education) {
+              @grp.occupation.education.schoolName
+            }
+          }
+        }
+      </div>
+    </li>
+  }
+  @if(! data.mobile) {
+    <li class="brev-spacer">&nbsp;</li>
+  }
+</ul>

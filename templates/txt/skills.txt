@@ -1,0 +1,7 @@
+@!(data)
+@{com=', '}
+
+SKILLS
+
+
+@for(i=0; i<data.skills.values.length; i++){@{cur = data.skills.values[i].skill}@cur.name@if(i<data.skills.values.length-1){@com}else{.}}

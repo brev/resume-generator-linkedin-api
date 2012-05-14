@@ -1,0 +1,35 @@
+Brev Patterson Resume
+
+Script to build HTML, Mobile, Text, and PDF resumes from LinkedIn Profile API data.
+
+Input:
+  http://www.linkedin.com/in/brevitae 
+
+Output:
+  http://brev.name/resume/brev-resume.html
+  http://brev.name/resume/brev-resume-mobile.html
+  http://brev.name/resume/brev-resume.pdf
+  http://brev.name/resume/brev-resume.txt
+
+prereq: Node JS (0.6.15)
+
+To Use:
+  
+  1. :shell> npm install bliss node-config pdfkit prompt superagent wordwrap
+  
+  2. Edit config/default.js, put in your LinkedIn keys
+  
+  3. :shell> node ./get-linkedin-access.js
+  
+  4. Edit config/default.js, and put in Access Keys results from #3
+  
+  5. :shell> node ./build-resumes.js
+  
+  6. Check ./output/ directory for Resumes
+
+
+(For older version of this resume building system, which used an XML master
+and XSLT translations, instead of LinkedIn master and 
+Bliss/PDFKit translations, look backwards in time in this same repo).
+
+

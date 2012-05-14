@@ -1,0 +1,233 @@
+/* page width = 940px ( 660px ( 160px + 485px ( 240px + 240px ) ) + 235px ) */
+
+/* tags */
+
+body { 
+    width: 940px;
+    margin: auto;
+    font-family: verdana; 
+    color: #555;
+}
+a, 
+a:link, 
+a:active, 
+a:visited {
+    color: #C83;
+    border-bottom: 1px dotted #FC9;
+    text-decoration: none;
+}
+a:hover {
+    color: darkorange;
+    border-bottom: 1px solid darkorange;
+}
+p {
+    font-size: 85%;
+    margin-bottom: 1em;
+}
+
+/* page */
+
+#brev-resume {
+    width: 940px;
+    float: left;
+    clear: both;
+    margin: 1em 0 0.5em 0.5em;
+}
+.brev-spacer {
+    margin-top: 1em;
+}
+.brev-faded {
+    color: #BBB;
+}
+
+/* info column, far right */
+
+#brev-resume-info {
+    width: 235px;
+    float: right;
+}
+#brev-resume-info em {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 500%;
+    letter-spacing: -6px;
+    color: darkorange;
+    margin-left: -5px;
+}
+#brev-resume-info h2 {
+    font-size: 85%;
+    color: #BBB;
+    margin: -10px 0 3em 0;
+}
+#brev-resume-info-contact {
+    font-size: 85%;
+}
+#brev-resume-info-contact h1 {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+#brev-resume-info-contact ul li {
+    margin-bottom: 0.1em;
+}
+#brev-resume-info-contact ul,
+#brev-resume-info-contact div {
+    margin-bottom: 1em;
+}
+#brev-resume-info-contact-email {
+    padding-top: 0.7em;
+}
+#brev-resume-updated {
+    color: #BBB;
+}
+
+/* main sections column, left */
+
+#brev-resume-sections {
+    width: 660px;
+    float: left;
+    margin-top: 8.3em;
+}
+.brev-resume-section {
+    width: 660px;
+    float: left;
+    clear: both;
+    margin-bottom: 2.5em;
+    padding-top: 0.5em;
+    border-top: 1px solid #DDD;
+}
+.brev-resume-section h3 {
+    width: 160px;
+    float: left;
+    margin-top: -4px;
+    color: #DDD;
+    font-weight: bold;
+    font-size: 231%;
+    text-transform: uppercase;
+}
+.brev-resume-section-content {
+    width: 485px;
+    float: right;
+}
+
+/* job history */
+
+.brev-resume-history-job {
+    margin-bottom: 1.5em;
+}
+.brev-resume-history-job-info {
+    width: 485px;
+    float: left;
+    clear: both;
+    margin-bottom: 0.2em;
+}
+.brev-resume-history-job-info-whowhatwhere {
+    width: 240px;
+    float: left;
+}
+h4 {
+    margin-left: -1px;
+    font-weight: bold;
+    font-size: 138.5%;
+    color: darkorange;
+}
+h4 a, 
+h4 a:link, 
+h4 a:active, 
+h4 a:visited {
+    color: darkorange;
+    border-bottom: 1px dotted #FC9;
+    text-decoration: none;
+}
+h4 a:hover {
+    border: 0;
+    text-decoration: underline;
+}
+h5 {
+    font-size: 85%;
+    font-weight: bold;
+}
+.brev-resume-history-job-info-where {
+    margin-top: 1px;
+    color: #BBB; 
+    font-size: 85%;
+}
+.brev-resume-history-job-info-when {
+    width: 240px;
+    float: right;
+    margin-top: 1.3em;
+    color: #DDD; 
+    text-align: right;
+    font-size: 108%;
+    font-weight: bold;
+}
+
+/* skills */
+
+#brev-resume-skills {
+    margin-bottom: 3.2em;
+}
+#brev-resume-skills a, 
+#brev-resume-skills a:link, 
+#brev-resume-skills a:active, 
+#brev-resume-skills a:visited {
+    color: #555;
+    border: 0;
+    text-decoration: none;
+}
+#brev-resume-skills a:hover {
+    border-bottom: 1px dotted #FC9;
+}
+.brev-resume-skills-area {
+    width: 485px;
+    float: left;
+}
+.brev-resume-skills-area h4 {
+    margin-bottom: 0.5em;
+}
+.brev-resume-skills-set {
+    margin-bottom: 1em;
+    padding-right: 2em;
+}
+.brev-resume-skills-set em {
+    font-weight: bold;
+}
+.brev-resume-skills-list li {
+    display: inline;
+    font-size: 85%;
+}
+.brev-resume-skills-list li:after {
+    content: ", ";
+}
+.brev-resume-skills-list li:last-child:after {
+    content: ".";
+}
+
+/* effort */
+
+.brev-resume-effort-area {
+    width: 240px;
+    float: left;
+    margin-bottom: 1em;
+}
+.brev-resume-effort-area h4 {
+    margin-bottom: 0.5em;
+}
+.brev-resume-effort-area h5 {
+    font-weight: normal;
+    display: inline;
+    font-size: 100%;
+}
+.brev-resume-effort-area ul li {
+    margin-bottom: 1em;
+    font-size: 85%;
+    padding-right: 2em;
+}
+.brev-resume-effort-area ul li em {
+    font-weight: bold;
+    display: block;
+}
+#brev-resume-effort-resume p {
+    color: #BBB;
+    padding-right: 2em;
+}

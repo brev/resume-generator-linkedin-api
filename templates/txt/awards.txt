@@ -1,0 +1,8 @@
+@!(data)
+Awards
+@for(i=0; i<data.honorsAwards.values.length; i++) {@{awd = data.honorsAwards.values[i]}
+@awd.date.year
+@awd.name
+@awd.issuer
+@awd.occupation.schoolName
+}

@@ -1,0 +1,9 @@
+@!(data)
+CAREER
+@for(i=0; i<data.positions.values.length; i++) {
+  @{cur = data.positions.values[i]}
+@cur.company.name
+  @cur.title
+  @cur.startDate.monthname @cur.startDate.year - @cur.endDate.monthname @cur.endDate.year
+@cur.summary
+}

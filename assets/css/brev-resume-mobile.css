@@ -1,0 +1,192 @@
+/* tags */
+
+body { 
+    font-family: verdana; 
+    color: #333;
+}
+a, 
+a:link, 
+a:active, 
+a:visited {
+    color: #C83;
+    border-bottom: 1px dotted #FC9;
+    text-decoration: none;
+}
+a:hover {
+    color: darkorange;
+    border-bottom: 1px solid darkorange;
+}
+p {
+    font-size: 85%;
+    margin-bottom: 1em;
+}
+
+/* page */
+
+#brev-resume {
+    margin: 1em 1em 4em 1em;
+}
+.brev-faded {
+    color: #999;
+}
+
+/* info column, far right */
+
+#brev-resume-info em {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 500%;
+    letter-spacing: -6px;
+    color: darkorange;
+    margin-left: -5px;
+}
+#brev-resume-info h2 {
+    font-size: 85%;
+    color: #999;
+    margin: -10px 0 2em 0;
+}
+#brev-resume-info-contact {
+    font-size: 85%;
+}
+#brev-resume-info-contact h1 {
+    font-weight: bold;
+}
+#brev-resume-info-contact ul li {
+    margin-bottom: 0.1em;
+}
+#brev-resume-updated {
+    margin-top: 1em;
+    color: #999;
+}
+
+/* main sections column, left */
+
+#brev-resume-sections {
+    margin-top: 3em;
+}
+.brev-resume-section {
+    margin-bottom: 2.5em;
+    padding-top: 0.5em;
+    border-top: 1px solid #CCC;
+}
+.brev-resume-section h3 {
+    margin-bottom: 0.5em;
+    color: #999;
+    font-weight: bold;
+    font-size: 231%;
+    text-transform: uppercase;
+}
+
+/* job history */
+
+#brev-resume-history {
+    margin-bottom: 3em;
+}
+.brev-resume-history-job {
+    margin-bottom: 1.5em;
+}
+.brev-resume-history-job-info {
+    margin-bottom: 0.2em;
+}
+h4 {
+    margin-left: -1px;
+    font-weight: bold;
+    font-size: 138.5%;
+    color: darkorange;
+}
+h4 a, 
+h4 a:link, 
+h4 a:active, 
+h4 a:visited {
+    color: darkorange;
+    border-bottom: 1px dotted #FC9;
+    text-decoration: none;
+}
+h4 a:hover {
+    border: 0;
+    text-decoration: underline;
+}
+h5 {
+    font-size: 85%;
+    font-weight: bold;
+}
+.brev-resume-history-job-info-where {
+    margin-top: 1px;
+    color: #999; 
+    font-size: 85%;
+}
+.brev-resume-history-job-info-when {
+    color: #999;
+    font-size: 85%;
+}
+
+/* skills */
+
+#brev-resume-skills {
+    margin-bottom: 3.2em;
+}
+#brev-resume-skills a, 
+#brev-resume-skills a:link, 
+#brev-resume-skills a:active, 
+#brev-resume-skills a:visited {
+    color: #555;
+    border: 0;
+    text-decoration: none;
+}
+#brev-resume-skills a:hover {
+    border-bottom: 1px dotted #FC9;
+}
+.brev-resume-skills-area {
+    margin-bottom: 1.5em;
+}
+.brev-resume-skills-area h4 {
+    margin-bottom: 0.5em;
+}
+.brev-resume-skills-set {
+    font-size: 85%;
+    margin-bottom: 1em;
+    padding-right: 2em;
+}
+.brev-resume-skills-set em {
+    font-weight: bold;
+}
+ul.brev-resume-skills-list li {
+    display: inline;
+    font-size: 0.85em;
+}
+ul.brev-resume-skills-list li:after {
+    content: ", ";
+}
+ul.brev-resume-skills-list li:last-child:after {
+    content: ".";
+}
+
+
+/* effort */
+
+.brev-resume-effort-area {
+    margin-bottom: 1.5em;
+}
+.brev-resume-effort-area h4 {
+    margin-bottom: 0.5em;
+}
+.brev-resume-effort-area h5 {
+    font-weight: normal;
+    display: inline;
+    font-size: 100%;
+}
+.brev-resume-effort-area ul li {
+    margin-bottom: 1em;
+    font-size: 85%;
+    padding-right: 2em;
+}
+.brev-resume-effort-area ul li em {
+    font-weight: bold;
+    display: block;
+}
+#brev-resume-effort-resume p {
+    color: #999;
+    margin: 0;
+    display: inline;
+}

@@ -1,0 +1,13 @@
+@!(data)
+<h3>Skills</h3>
+<ul class="brev-resume-section-content">
+  <li class="brev-resume-skills-area">
+    <h4>Current Tech</h4>
+    <ul class="brev-resume-skills-list">
+      @for(i=0; i<data.skills.values.length; i++) {
+        @{cur = data.skills.values[i].skill}
+        <li>@cur.name</li>
+      } 
+    </ul>
+  </li>    
+</ul>

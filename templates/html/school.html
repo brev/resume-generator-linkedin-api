@@ -1,0 +1,19 @@
+@!(data)
+@{edu = data.educations.values[0]}
+<h4>School</h4>
+<ul>
+  <li itemscope itemtype="http://schema.org/CollegeOrUniversity">
+    <em>@edu.startDate.year</em>
+    <h5>@data.major @edu.degree</h5> 
+    <div>@data.minor Minor</div>
+    <div class="brev-faded" itemprop="name">@edu.schoolName</div>
+  </li>
+  @for(i=0; i<data.certifications.values.length; i++) {
+    @{cert = data.certifications.values[i]}
+    <li itemscope itemtype="http://schema.org/CollegeOrUniversity">
+      <em>@cert.startDate.year</em>
+      <h5>@cert.name</h5> 
+      <div class="brev-faded" itemprop="name">@cert.authority.name</div>
+    </li>
+  }
+</ul>

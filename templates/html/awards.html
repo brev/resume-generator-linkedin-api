@@ -1,0 +1,13 @@
+@!(data)
+<h4>Awards</h4>
+<ul>
+  @for(i=0; i<data.honorsAwards.values.length; i++) { 
+  @{awd = data.honorsAwards.values[i]} 
+    <li>
+      <em>@awd.date.year</em>
+      <h5>@awd.name</h5>
+      <div>@awd.issuer</div>
+      <div>@awd.occupation.schoolName</div>
+    </li>
+  }
+</ul>

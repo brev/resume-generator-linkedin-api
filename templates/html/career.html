@@ -1,0 +1,29 @@
+@!(data)
+<h3>Career</h3>
+<ul class="brev-resume-section-content">
+  @for(i=0; i<data.positions.values.length; i++) {  
+    @{cur = data.positions.values[i]}
+    <li class="brev-resume-history-job">
+      <div class="brev-resume-history-job-info">
+        <div class="brev-resume-history-job-info-whowhatwhere">
+          <h4 itemscope itemtype="http://schema.org/Corporation">
+            <span itemprop="name">@cur.company.name</span>
+          </h4>
+          <h5>@cur.title</h5>
+        </div>
+        <div class="brev-resume-history-job-info-when">
+          <span>
+            @cur.startDate.monthname @cur.startDate.year
+          </span>             
+          &#8212;
+          <span>
+            @cur.endDate.monthname @cur.endDate.year
+          </span>
+        </div>
+      </div>
+      <p>
+        @cur.summary
+      </p>
+    </li>
+  }
+</ul>
