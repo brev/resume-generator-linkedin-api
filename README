@@ -12,12 +12,10 @@ Output:
   http://brev.name/resume/brev-resume.pdf
   http://brev.name/resume/brev-resume.txt
 
-prereq: Node JS (0.6.15)
+prereq: Node JS (0.6.15), Perl
 
 To Use:
 
-  0. Make sure to have perl installed (perl -v) 
-  
   1. :shell> npm install bliss node-config pdfkit prompt superagent wordwrap
   
   2. Edit config/default.js, put in your LinkedIn keys
