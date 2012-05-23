@@ -1,18 +1,13 @@
 @!(data)
-@{edu = data.educations.values[0]}
 <h4>School</h4>
 <ul>
-  <li itemscope itemtype="http://schema.org/CollegeOrUniversity">
-    <em>@edu.startDate.year</em>
-    <h5>@data.major @edu.degree</h5> 
-    <div>@data.minor Minor</div>
-    <div class="brev-faded" itemprop="name">@edu.schoolName</div>
-  </li>
   @for(i=0; i<data.certifications.values.length; i++) {
     @{cert = data.certifications.values[i]}
+    @{datest = cert.endDate ? cert.endDate.year : cert.startDate.year}
     <li itemscope itemtype="http://schema.org/CollegeOrUniversity">
-      <em>@cert.startDate.year</em>
-      <h5>@cert.name</h5> 
+      <em>@datest</em>
+      <h5>@cert.name</h5>
+      @if(cert.name2) { <div>@cert.name2</div> }
       <div class="brev-faded" itemprop="name">@cert.authority.name</div>
     </li>
   }

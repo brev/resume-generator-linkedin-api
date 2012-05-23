@@ -1,6 +1,7 @@
 Brev Patterson Resume
 
-Script to build HTML, Mobile, Text, and PDF resumes from LinkedIn Profile API data.
+Script to build HTML, Mobile, Text, and PDF resumes from 
+LinkedIn Profile API data.
 
 Input:
   http://www.linkedin.com/in/brevitae 
@@ -14,6 +15,8 @@ Output:
 prereq: Node JS (0.6.15)
 
 To Use:
+
+  0. Make sure to have perl installed (perl -v) 
   
   1. :shell> npm install bliss node-config pdfkit prompt superagent wordwrap
   

@@ -9,28 +9,19 @@ exports.render = function(doc, data) {
     text('School', cfg.column.two.start);
   doc.moveDown(0.5);
   
-  edu = data.educations.values[0];
-  doc.
-    fillColor(cfg.color.default).
-    fontSize(cfg.font.small).
-    text(edu.startDate.year);
-  doc.
-    font(cfg.font.face).
-    text(data.major + ' ' + edu.degree);
-  doc.text(data.minor + ' Minor');
-  doc.
-    fillColor(cfg.color.gray).
-    text(edu.schoolName);
-  doc.moveDown(1);
-
   data.certifications.values.forEach(function(cert, idx) {
+    var datest = cert.endDate ? cert.endDate.year : cert.startDate.year; 
     doc.
       fillColor(cfg.color.default).
       font(cfg.font.boldface).
-      text(cert.startDate.year);
+      fontSize(cfg.font.small).
+      text(datest);
     doc.
       font(cfg.font.face).
       text(cert.name);
+    if(cert.name2) {
+      doc.text(cert.name2);
+    }
     doc.
       fillColor(cfg.color.gray).
       text(cert.authority.name);

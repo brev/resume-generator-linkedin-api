@@ -3,10 +3,6 @@ module.exports = {
     api   : 'LINKEDIN_API_KEY_GOES_HERE',
     secret: 'LINKEDIN_SECRET_KEY_GOES_HERE',
   },
-  access: {
-    token:  'LINKEDIN_ACCESS_TOKEN_GOES_HERE',
-    secret: 'LINKEDIN_ACCESS_SECRET_GOES_HERE',
-  },
   path: {
     profile: '/v1/people/~',
     token: {
@@ -16,5 +12,9 @@ module.exports = {
   },
   url: {
     api: 'https://api.linkedin.com',
+  },
+  access: {
+    token:  'LINKEDIN_ACCESS_TOKEN_GOES_HERE',
+    secret: 'LINKEDIN_ACCESS_SECRET_GOES_HERE',
   },
 };

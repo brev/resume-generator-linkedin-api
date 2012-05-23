@@ -6,7 +6,7 @@
     <li itemscope itemtype="http://schema.org/Organization">
       <em>@grp.startDate.year</em>
       <div itemprop="name">@grp.name</div>
-      <h5>@grp.description</h5>
+      @if(grp.description){<h5>@grp.description</h5>}
       <div class="brev-faded">
         @if(grp.occupation) {
           @if(grp.occupation.position) {

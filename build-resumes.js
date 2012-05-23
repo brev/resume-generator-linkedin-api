@@ -8,6 +8,7 @@
 var Bliss = require('bliss'),
     config = require('config'),
     events = require('events'),
+    exec = require('child_process').exec,
     fs = require('fs'),
     helpers = require('./lib/helpers'),
     prompt = require('prompt'),
@@ -113,16 +114,14 @@ var getProfileData = function() {
  */
 getProfileData();
 emitter.on('gotProfileData', function(res) {
+  if(! res.mainAddress) { console.log(res); }
+  
   // overrides for profile data hash
   var addy = res.mainAddress.split('\n');
   res.country = addy[1]; 
   addy = addy[0].split(', ');
   res.city = addy[0];
   res.state = addy[1];
-
-  var edu = res.educations.values[0].fieldOfStudy.split(', ');
-  res.major = edu[0];
-  res.minor = edu[1];
 
   res.today = new Date().toDateString();
     
@@ -131,14 +130,37 @@ emitter.on('gotProfileData', function(res) {
     res.positions.values[idx].endDate.monthname = helpers.monthnames[val.endDate.month];
   });
 
+  var edu = res.educations.values[0];
+  var deg = edu.fieldOfStudy.split(', ');
+  res.certifications.values.push({
+    endDate: {
+      year: edu.endDate.year || null,
+    },
+    startDate: {
+      year: edu.startDate.year || null,
+    },
+    name:   deg[0] + ' ' + edu.degree,
+    name2:  deg[1] + ' Minor',
+    authority: {
+      name: edu.schoolName
+    }
+  });
+  res.certifications.values.sort(function(a,b) { 
+    a = a.endDate ? a.endDate.year : a.startDate.year;
+    b = b.endDate ? b.endDate.year : b.startDate.year; 
+    return b - a;
+  });
+
+
   // html desktop resume
   var fnh = outputdir + res.firstName.toLowerCase() + '-resume.html';
   var data = bliss.render('./templates/html/index.html', res);
   fs.writeFile(fnh, data, function(err) {
     if(err) { throw err; }
     else {
+      exec('perl -pi -e "s/^\\s*\\n//" ' + fnh); // clean
       console.log('- HTML resume saved to ' + fnh);
-    
+      
       // html mobile resume
       res['mobile'] = 'mobile';
       var fnm = outputdir + res.firstName.toLowerCase() + '-resume-mobile.html';
@@ -147,11 +169,12 @@ emitter.on('gotProfileData', function(res) {
         if(err) { throw err; }
         else {
           console.log('- Mobile HTML resume saved to ' + fnm);
+          exec('perl -pi -e "s/^\\s*\\n//" ' + fnm); // clean
         }
       });
     }
   });
-
+  
   // txt resume
   var fnt = outputdir + res.firstName.toLowerCase() + '-resume.txt';
   var data = bliss.render('./templates/txt/index.txt', res);

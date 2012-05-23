@@ -1,12 +1,8 @@
 @!(data)
-School
-@{edu = data.educations.values[0]}
-@edu.startDate.year
-@data.major @edu.degree
-@data.minor Minor
-@edu.schoolName@for(i=0; i<data.certifications.values.length; i++) {
-  @{cert = data.certifications.values[i]}
-@cert.startDate.year
-@cert.name
+School@for(i=0; i<data.certifications.values.length; i++) {
+@{cert = data.certifications.values[i]}
+@{datest = cert.endDate ? cert.endDate.year : cert.startDate.year}@datest
+@cert.name@if(cert.name2){
+@cert.name2}
 @cert.authority.name
 }
