@@ -52,10 +52,18 @@ exports.render = function(fn, data) {
   var w = doc.widthOfString(str);
   var h = doc.currentLineHeight();
   doc.link(cfg.column.three.start, y, w, h, str);
+  
+  // github
+  y += cfg.padding.small;
+  str = 'GitHub';
+  doc.text(str, cfg.column.three.start, y);  
+  var w = doc.widthOfString(str);
+  var h = doc.currentLineHeight();
+  doc.link(cfg.column.three.start, y, w, h, 'http://github.com/brev');
 
   // linkedin
   y += cfg.padding.small;
-  str = 'LinkedIn Profile';
+  str = 'LinkedIn';
   doc.text(str, cfg.column.three.start, y);  
   var w = doc.widthOfString(str);
   var h = doc.currentLineHeight();
@@ -104,10 +112,10 @@ exports.render = function(fn, data) {
     moveTo(cfg.margin.left, y).
     lineTo(cfg.column.three.start - cfg.padding.large, y).
     lineWidth(1).
-    strokeColor(cfg.color.strokegray).
+    strokeColor(cfg.color.gray).
     stroke();
   doc.
-    fillColor(cfg.color.litegray).
+    fillColor(cfg.color.gray).
     font(cfg.font.boldface).
     fontSize(cfg.font.h2).
     text('CAREER', cfg.column.one.start, y + cfg.padding.small - 3);
@@ -118,10 +126,10 @@ exports.render = function(fn, data) {
     moveTo(cfg.column.one.start, 504).
     lineTo(cfg.column.three.start - cfg.padding.large, 504).
     lineWidth(1).
-    strokeColor(cfg.color.strokegray).
+    strokeColor(cfg.color.gray).
     stroke();
   doc.
-    fillColor(cfg.color.litegray).
+    fillColor(cfg.color.gray).
     font(cfg.font.boldface).
     fontSize(cfg.font.h2).
     moveDown(1).
@@ -143,11 +151,11 @@ exports.render = function(fn, data) {
     moveTo(cfg.column.one.start, y).
     lineTo(cfg.column.three.start - cfg.padding.large, y).
     lineWidth(1).
-    strokeColor(cfg.color.strokegray).
+    strokeColor(cfg.color.gray).
     stroke();
   doc.
     moveUp(4).
-    fillColor(cfg.color.litegray).
+    fillColor(cfg.color.gray).
     font(cfg.font.boldface).
     fontSize(cfg.font.h2).
     moveDown(1.33).

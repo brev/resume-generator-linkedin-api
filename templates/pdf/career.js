@@ -17,7 +17,7 @@ exports.render = function(doc, data) {
       text(cur.title).
       moveDown(0.2);
     doc.
-      fillColor(cfg.color.litegray).
+      fillColor(cfg.color.gray).
       fontSize(cfg.font.h4).
       moveUp(1).
       text(

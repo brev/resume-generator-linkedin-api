@@ -1,10 +1,8 @@
 module.exports = {
   color: {
     gray:       '#999',
-    litegray:   '#CCC',
     orange:     '#F88017',
-    default:    '#333',
-    strokegray: '#EEE',
+    default:    '#000',
   },
   column: {
     one: {
