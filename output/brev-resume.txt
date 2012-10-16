@@ -6,7 +6,7 @@ http://brev.name
 me@brev.name
 408-548-7610
 Sunnyvale, CA, United States
-Last updated: Mon Sep 17 2012
+Last updated: Mon Oct 15 2012
 
 
 
@@ -64,13 +64,13 @@ statistics generation.
 SKILLS
 
 
-Accessibility, Agile, AJAX, Atom, Cookies, CSS3, CVS, DOM,
-FreeBSD, Git, Graphic Design, HTML5, HTTP, Illustrator,
-Javascript, jQuery, JSON, Linux, Mac, Microformats, MVC, MySQL,
-Node.js, OAuth, OOP, OpenID, Perl, Photography, Photoshop, PHP,
-PostgreSQL, REST, RSS, Schema.org, Scrum, ScrumMaster, SEO,
-Shell Scripting, SQL, Subversion, Web Standards, Typography,
-Unicode, Web Services, Windows, XML, XSLT, YUI.
+Accessibility, Agile, AJAX, CSS3, DOM, FreeBSD, Git, Graphic
+Design, HTML5, HTTP, Javascript, JavaScript, jQuery, JSON,
+Linux, Mac, MVC, MySQL, Node.js, OAuth, OOP, Perl, Photography,
+Photoshop, PHP, PostgreSQL, REST, RSS, Schema.org, Scrum,
+ScrumMaster, SEO, Shell Scripting, SQL, Subversion, Web
+Standards, Typography, Unicode, Web Services, Windows, XML,
+XSLT, Illustrator, YUI.
 
 
 
