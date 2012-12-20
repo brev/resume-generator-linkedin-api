@@ -20,7 +20,7 @@ Current
 Building systems based on the operating principles of the
 neocortex.
 
-Yahoo! Inc.
+Yahoo!
 Lead Engineer
 Jul 2007 - 
 Jun 2011
@@ -37,7 +37,7 @@ Team Lead and Lead Engineer for a scalable platform of seven
 online retail stores. Each month these sites handled millions of
 dollars in sales, and several hundred thousand users.
 
-Red Hat, Inc.
+Red Hat
 Senior Web Developer
 Feb 2001 - 
 Jun 2002
@@ -119,7 +119,7 @@ Weber State University
 2001
 Interchange
 Open-source software development project.
-Red Hat, Inc.
+Red Hat
 
 1994
 Lapse
