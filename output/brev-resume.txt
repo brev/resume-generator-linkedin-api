@@ -6,16 +6,24 @@ http://brev.name
 me@brev.name
 408-548-7610
 Sunnyvale, CA, United States
-Last updated: Mon Oct 15 2012
+Last updated: Wed Dec 19 2012
 
 
 
 CAREER
 
 
+Numenta
+Senior Front End Engineer
+Dec 2012 - 
+Current
+Building systems based on the operating principles of the
+neocortex.
+
 Yahoo! Inc.
 Lead Engineer
-Jul 2007 - Jun 2011
+Jul 2007 - 
+Jun 2011
 Engineering Manager, Lead Engineer, Lead Frontend Engineer,
 Hiring Manager, and Scrum Master for Yahoo! Local Search,
 Upcoming, and Yahoo! Neighbors. These sites serve several
@@ -23,14 +31,16 @@ million users per day.
 
 Backcountry.com
 Lead Engineer
-Aug 2002 - Jul 2007
+Aug 2002 - 
+Jul 2007
 Team Lead and Lead Engineer for a scalable platform of seven
 online retail stores. Each month these sites handled millions of
 dollars in sales, and several hundred thousand users.
 
 Red Hat, Inc.
 Senior Web Developer
-Feb 2001 - Jun 2002
+Feb 2001 - 
+Jun 2002
 Built a turnkey e-commerce software suite that received
 favorable reviews in the trade press. Created a wiki-based web
 application that powered the corporate intranet. Developed
@@ -39,14 +49,16 @@ McGraw-Hill.
 
 Mediabang!
 Web Developer
-Jul 1999 - Feb 2001
+Jul 1999 - 
+Feb 2001
 Created dynamic websites for clients such as the Sundance Film
 Festival, Franklin Covey, Brewvies, and the Utah Highway
 Patrol.
 
 XMission
 Support Engineer
-Apr 1995 - Jul 1997
+Apr 1995 - 
+Jul 1997
 Customer support for Utah's first and largest Internet Service
 Provider. Developed web-based statistics monitoring to watch the
 health of routers and servers. Created a CD-ROM installer for
@@ -54,7 +66,8 @@ new user connectivity software.
 
 Starnet
 Junior Software Developer
-Dec 1994 - Apr 1995
+Dec 1994 - 
+Apr 1995
 Developed client software and user interfaces for an early video
 server system. Captured embedded data in video streams for
 statistics generation.
@@ -66,9 +79,9 @@ SKILLS
 
 Accessibility, Agile, AJAX, CSS3, DOM, FreeBSD, Git, Graphic
 Design, HTML5, HTTP, Javascript, JavaScript, jQuery, JSON,
-Linux, Mac, MVC, MySQL, Node.js, OAuth, OOP, Perl, Photography,
-Photoshop, PHP, PostgreSQL, REST, RSS, Schema.org, Scrum,
-ScrumMaster, SEO, Shell Scripting, SQL, Subversion, Web
+Linux, Mac, MVC, MySQL, Node.js, NoSQL, OAuth, OOP, Perl,
+Photography, Photoshop, PHP, PostgreSQL, REST, RSS, Schema.org,
+Scrum, ScrumMaster, SEO, Shell Scripting, SQL, Subversion, Web
 Standards, Typography, Unicode, Web Services, Windows, XML,
 XSLT, Illustrator, YUI.
 

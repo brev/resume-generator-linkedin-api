@@ -127,7 +127,9 @@ emitter.on('gotProfileData', function(res) {
     
   res.positions.values.forEach(function(val, idx) {
     res.positions.values[idx].startDate.monthname = helpers.monthnames[val.startDate.month];
-    res.positions.values[idx].endDate.monthname = helpers.monthnames[val.endDate.month];
+    if(val.endDate) { 
+      res.positions.values[idx].endDate.monthname = helpers.monthnames[val.endDate.month];
+    }
   });
 
   var edu = res.educations.values[0];
@@ -150,7 +152,6 @@ emitter.on('gotProfileData', function(res) {
     b = b.endDate ? b.endDate.year : b.startDate.year; 
     return b - a;
   });
-
 
   // html desktop resume
   var fnh = outputdir + res.firstName.toLowerCase() + '-resume.html';

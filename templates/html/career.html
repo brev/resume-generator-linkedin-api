@@ -17,7 +17,12 @@
           </span>             
           &#8212;
           <span>
-            @cur.endDate.monthname @cur.endDate.year
+            @if(cur.endDate) {
+              @cur.endDate.monthname @cur.endDate.year
+            }
+            else {
+              Current
+            }
           </span>
         </div>
       </div>

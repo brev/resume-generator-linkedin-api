@@ -16,15 +16,21 @@ exports.render = function(doc, data) {
     doc.
       text(cur.title).
       moveDown(0.2);
+    var endy;
+    if(cur.endDate) {
+      endy = cur.endDate.monthname + ' ' + cur.endDate.year; 
+    }
+    else {
+      endy = 'Current';
+    }
     doc.
       fillColor(cfg.color.gray).
       fontSize(cfg.font.h4).
       moveUp(1).
       text(
         cur.startDate.monthname + ' ' + 
-        cur.startDate.year + ' - ' + 
-        cur.endDate.monthname + ' ' + 
-        cur.endDate.year, 
+        cur.startDate.year + ' - ' +
+        endy,
         { align: 'right', width: cfg.column.two.width }
       );
     doc.

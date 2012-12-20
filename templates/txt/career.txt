@@ -4,6 +4,6 @@ CAREER
   @{cur = data.positions.values[i]}
 @cur.company.name
   @cur.title
-  @cur.startDate.monthname @cur.startDate.year - @cur.endDate.monthname @cur.endDate.year
+  @cur.startDate.monthname @cur.startDate.year - @if(cur.endDate) { @cur.endDate.monthname @cur.endDate.year } else { Current }
 @cur.summary
 }
